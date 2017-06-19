@@ -4,6 +4,9 @@ var cont;
 var n;
 var text = "";
 
+function Timer(){
+	x = setInterval(myPrint(), 2000);
+}
 
 function myPrint(n){
 	while(i < n){
@@ -14,8 +17,5 @@ function myPrint(n){
 	}
 	return cont;
 }
-function Timer(){
-	x = setInterval(myPrint(), 2000);
-}
-
-myPrint(10);
+Timer();
+console.log(myPrint(10));
